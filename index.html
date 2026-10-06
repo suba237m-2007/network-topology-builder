@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Network Topology Builder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌐 Network Topology Builder</h1>
+        <p>Build and visualize your computer network</p>
+    </header>
+
+    <div class="container">
+
+        <!-- TOOLBAR -->
+        <div class="toolbar">
+
+            <button id="addPC">💻 Add PC</button>
+
+<button id="addRouter">🌐 Add Router</button>
+
+<button id="addSwitch">🔀 Add Switch</button>
+
+<button id="addServer">🖥️ Add Server</button>
+
+<button id="connectBtn">🔗 Connect</button>
+
+<button id="sendPacketBtn">📦 Send Packet</button>
+
+<button id="deleteBtn">🗑️ Delete</button>
+
+<button id="clearBtn">🧹 Clear</button>
+
+        </div>
+
+        <!-- INFORMATION -->
+        <div class="info">
+
+            <div>
+                <strong>Devices:</strong>
+                <span id="deviceCount">0</span>
+            </div>
+
+            <div>
+                <strong>Connections:</strong>
+                <span id="connectionCount">0</span>
+            </div>
+
+            <div id="status">
+                Click a device to select it
+            </div>
+
+        </div>
+
+        <!-- NETWORK AREA -->
+        <div id="network">
+
+            <div class="welcome">
+                <h2>Build Your Network</h2>
+                <p>
+                    Use the buttons above to add devices.
+                    Then connect them together.
+                </p>
+            </div>
+
+        </div>
+<!-- NETWORK ACTIVITY -->
+<div class="activity-panel">
+
+    <h2>📡 Network Activity</h2>
+
+    <div id="activityLog">
+        <p>🟢 Network Status: ONLINE</p>
+        <p>Waiting for network activity...</p>
+    </div>
+
+</div>
+
+    </div>
+
+    <footer>
+        <p>Computer Networks Project | Network Topology Builder</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
